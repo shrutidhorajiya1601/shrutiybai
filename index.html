@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Dashboard - EduAI Nexus</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-theme="dark">
+    <div id="page-loader">
+        <div class="lottie-animation-container" id="lottie-loader"></div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <div class="dashboard-container">
+        <aside class="sidebar" id="sidebar">
+            <div class="logo">
+                <span class="icon">🎓</span> <span class="logo-text">EduAI Nexus</span>
+            </div>
+            <nav>
+                <div class="nav-group">
+                     <h3 class="group-title">Main</h3>
+                    <ul>
+                        <li><a href="index.html" class="nav-link" data-pageid="home-content"><span class="nav-icon">🏠</span> <span class="nav-text">Home</span></a></li>
+                        <li><a href="insights.html" class="nav-link" data-pageid="insights-content"><span class="nav-icon">📈</span> <span class="nav-text">My Progress</span></a></li>
+                        <li><a href="community-feed.html" class="nav-link" data-pageid="community-feed-content"><span class="nav-icon">👥</span> <span class="nav-text">Community Feed</span></a></li>
+                    </ul>
+                </div>
+                <div class="nav-group">
+                    <h3 class="group-title">Academics</h3>
+                    <ul>
+                        <li><a href="my-courses.html" class="nav-link" data-pageid="my-courses-content"><span class="nav-icon">📚</span> <span class="nav-text">My Courses</span></a></li>
+                        <li><a href="learning-materials.html" class="nav-link" data-pageid="learning-materials-content"><span class="nav-icon">📖</span> <span class="nav-text">Learning Materials</span></a></li>
+                        <li><a href="assessments.html" class="nav-link" data-pageid="assessments-content"><span class="nav-icon">📝</span> <span class="nav-text">Assessments</span></a></li>
+                        <li><a href="my-grades.html" class="nav-link" data-pageid="my-grades-content"><span class="nav-icon">🏆</span> <span class="nav-text">My Grades</span></a></li>
+                        <li><a href="my-calendar.html" class="nav-link" data-pageid="my-calendar-content"><span class="nav-icon">📅</span> <span class="nav-text">My Calendar</span></a></li>
+                         <li><a href="filestore.html" class="nav-link" data-pageid="filestore-content"><span class="nav-icon">📁</span> <span class="nav-text">My Files</span></a></li>
+                    </ul>
+                </div>
+                <div class="nav-group">
+                    <h3 class="group-title">Communication</h3>
+                    <ul>
+                        <li><a href="announcements.html" class="nav-link" data-pageid="announcements-content"><span class="nav-icon">📢</span> <span class="nav-text">Announcements</span></a></li>
+                        <li><a href="schedule-call.html" class="nav-link" data-pageid="schedule-call-content"><span class="nav-icon">📹</span> <span class="nav-text">Schedule Call</span></a></li>
+                    </ul>
+                </div>
+                <div class="nav-group">
+                    <h3 class="group-title">Learning Tools</h3>
+                    <ul>
+                        <li><a href="interactive-pdf-reader.html" class="nav-link" data-pageid="interactive-pdf-reader-content"><span class="nav-icon">🧐</span> <span class="nav-text">Interactive PDF Reader</span></a></li>
+                        <li><a href="advanced-notes.html" class="nav-link" data-pageid="advanced-notes-content"><span class="nav-icon">📓</span> <span class="nav-text">Advanced Notes</span></a></li>
+                        <li><a href="ai-study-planner.html" class="nav-link" data-pageid="ai-study-planner-content"><span class="nav-icon">🧠</span> <span class="nav-text">AI Study Planner</span></a></li>
+                        <li><a href="mock-interview.html" class="nav-link" data-pageid="mock-interview-content"><span class="nav-icon">💼</span> <span class="nav-text">Mock Interview Practice</span></a></li>
+                        <li><a href="gamification-hub.html" class="nav-link" data-pageid="gamification-hub-content"><span class="nav-icon">🏅</span> <span class="nav-text">Achievements Hub</span></a></li>
+                        <li><a href="collaborative-study-spaces.html" class="nav-link" data-pageid="collaborative-study-spaces-content"><span class="nav-icon">🧑‍🤝‍🧑</span> <span class="nav-text">Study Spaces</span></a></li>
+                    </ul>
+                </div>
+                <div class="nav-group">
+                    <h3 class="group-title">AI Studio</h3>
+                    <ul>
+                        <li><a href="chat.html" class="nav-link" data-pageid="chat-ai-page"><span class="nav-icon">💬</span> <span class="nav-text">AI Chat Bot</span></a></li>
+                        <li><a href="image-studio.html" class="nav-link" data-pageid="image-studio-content"><span class="nav-icon">🖼️</span> <span class="nav-text">Image Studio</span></a></li>
+                        <li><a href="#" class="nav-link" data-pageid="audio-studio-content"><span class="nav-icon">🎵</span> <span class="nav-text">Audio Studio</span></a></li>
+                        <li><a href="#" class="nav-link" data-pageid="content-writer-content"><span class="nav-icon">✍️</span> <span class="nav-text">Content Writer</span></a></li>
+                    </ul>
+                </div>
+                <div class="nav-group">
+                    <h3 class="group-title">Account & Support</h3>
+                    <ul>
+                        <li><a href="profile.html" class="nav-link" data-pageid="profile-content"><span class="nav-icon">👤</span> <span class="nav-text">My Profile</span></a></li>
+                        <li><a href="subscription.html" class="nav-link" data-pageid="subscription-content"><span class="nav-icon">💳</span> <span class="nav-text">Subscription</span></a></li>
+                        <li><a href="settings.html" class="nav-link" data-pageid="settings-content"><span class="nav-icon">⚙️</span> <span class="nav-text">Settings</span></a></li>
+                        <li><a href="help.html" class="nav-link" data-pageid="help-content"><span class="nav-icon">❓</span> <span class="nav-text">Help Center</span></a></li>
+                        <li><a href="feedback.html" class="nav-link" data-pageid="feedback-content"><span class="nav-icon">📣</span> <span class="nav-text">Send Feedback</span></a></li>
+                        <li><a href="#" class="nav-link" data-pageid="logout"><span class="nav-icon">🚪</span> <span class="nav-text">Logout</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="user-profile-wrapper">
+                <a href="profile.html" class="user-profile nav-link" data-pageid="profile-content">
+                    <div class="avatar">MG</div>
+                    <div class="user-info">
+                        <div class="user-name">Mack Gok <span class="user-plan">Free</span></div>
+                        <div class="user-email" title="openup@net.com">openup@net.com</div>
+                    </div>
+                    <span class="profile-link-icon nav-icon">❯</span>
+                </a>
+            </div>
+        </aside>
+
+        <div class="main-wrapper">
+            <header class="main-header">
+                <div class="header-left">
+                    <button class="icon-btn" id="menu-toggle-btn" aria-label="Toggle Menu"><span class="menu-icon">☰</span></button>
+                    <h1 class="header-title" id="page-title">Dashboard Home</h1>
+                </div>
+                <div class="header-actions">
+                    <div class="header-search" id="header-search">
+                        <button class="search-icon-btn" id="search-toggle-btn" aria-label="Toggle Search"><span class="search-icon">🔍</span></button>
+                        <span class="search-icon-abs">🔍</span>
+                        <input type="search" class="header-search-input" placeholder="Search..." id="search-input">
+                    </div>
+                    <a href="subscription.html" class="action-btn"><span class="btn-icon">👑</span> <span>Upgrade</span></a>
+                    <button class="icon-btn" aria-label="Notifications"><span class="noti-icon">🔔</span><span class="badge"></span></button>
+                    <button class="icon-btn" aria-label="Toggle Theme" id="theme-toggle-btn"><span class="theme-icon">☀️</span></button>
+                    <div class="header-avatar-wrapper">
+                        <a href="profile.html" title="Account Menu"><div class="header-avatar">MG</div></a>
+                    </div>
+                </div>
+            </header>
+
+            <main class="content-area active-view" id="home-content">
+                <section class="promo-banner">
+                     <div class="banner-content"><h2>Ignite Your Learning with AI-Powered Tools</h2><p>Welcome to EduAI Nexus! Your intelligent learning companion. Access your courses, track progress, and utilize powerful AI tools to enhance your studies.</p>
+                     <a href="my-courses.html" class="try-now-btn">Go to My Courses <span class="arrow">→</span></a>
+                    </div>
+                     <div class="banner-graphics"><div class="graphic-placeholder">✨</div><div class="graphic-placeholder">💡</div><div class="graphic-placeholder">🚀</div></div>
+                 </section>
+                 <h2 class="welcome-message"><span class="wave-icon">👋</span> Welcome back, Mack Gok!</h2>
+                 <p class="text-muted" style="font-size: 1.1rem; margin-bottom: 35px;">Here's a quick overview of your academic journey and tools.</p>
+
+                 <div class="grid-cards" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-bottom: 40px;">
+                    <div class="feature-card" style="padding: 25px;">
+                        <div class="card-image" style="height: 80px; width: 80px; font-size: 2.5rem;"><span>📅</span></div>
+                        <h3>Upcoming Deadlines</h3>
+                        <p style="font-size: 0.9rem;">Physics Quiz 2: Tomorrow<br>History Essay: 3 days</p>
+                        <a href="my-calendar.html" class="generate-btn" style="font-size: 0.9rem; padding: 10px 15px;">View Calendar <span class="arrow">→</span></a>
+                    </div>
+                    <div class="feature-card" style="padding: 25px;">
+                        <div class="card-image" style="height: 80px; width: 80px; font-size: 2.5rem;"><span>📈</span></div>
+                        <h3>Recent Grade</h3>
+                        <p style="font-size: 0.9rem;">Biology Midterm: 92%<br>Great job!</p>
+                        <a href="my-grades.html" class="generate-btn" style="font-size: 0.9rem; padding: 10px 15px;">View All Grades <span class="arrow">→</span></a>
+                    </div>
+                     <div class="feature-card" style="padding: 25px;">
+                        <div class="card-image" style="height: 80px; width: 80px; font-size: 2.5rem;"><span>💬</span></div>
+                        <h3>AI Study Bot</h3>
+                        <p style="font-size: 0.9rem;">Ask questions, get explanations, and practice concepts.</p>
+                        <a href="chat.html" class="generate-btn" style="font-size: 0.9rem; padding: 10px 15px;">Chat Now <span class="arrow">→</span></a>
+                    </div>
+                 </div>
+
+                 <section class="feature-cards">
+                     <div class="feature-card"><div class="card-image"><span>🖼️</span></div><h3>AI Image Studio</h3><p>Turn textual ideas into stunning images for your projects or presentations.</p><a href="image-studio.html" class="generate-btn">Generate Images <span class="arrow">→</span></a></div>
+                     <div class="feature-card"><div class="card-image"><span>📚</span></div><h3>My Courses</h3><p>Access all your enrolled courses, materials, and assignments in one place.</p><a href="my-courses.html" class="generate-btn">View Courses <span class="arrow">→</span></a></div>
+                     <div class="feature-card"><div class="card-image"><span>📖</span></div><h3>Learning Materials</h3><p>Download PDFs, watch lecture videos, and access other study resources.</p><a href="learning-materials.html" class="generate-btn">Access Materials <span class="arrow">→</span></a></div>
+                 </section>
+                 <section class="quick-links-section">
+                     <h3>Quick Links</h3>
+                     <ul>
+                         <li><a href="assessments.html">Upcoming Assessments</a></li>
+                         <li><a href="announcements.html">Latest Announcements</a></li>
+                         <li><a href="help.html">Help & FAQ</a></li>
+                     </ul>
+                 </section>
+            </main>
+        </div>
+    </div>
+
+    <a href="chat.html" class="floating-chat-btn" title="Chat with AI Assistant">
+        <span class="chat-icon">💬</span>
+    </a>
+    <script src="script.js" defer></script>
+</body>
+</html>
